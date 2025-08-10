@@ -19,4 +19,9 @@ class Product extends Model
 
     public $timestamps = false;
 
+    public function categoria()
+    {
+        return $this->belongsTo(Categoria::class);
+    }
+
 }
